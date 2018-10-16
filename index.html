@@ -30,7 +30,7 @@
 
 				<div class="titulo"> Cadastro de Aluno</div><br>
 				<label for="nome">Nome:</label><br>
-				<input type="text" id="nome" required/><br>
+				<input type="text" id="nome" pattern="[a-z\s]+$" required/><br>
 				<br>
 
 
@@ -39,21 +39,23 @@
 				<br>
 
 				<label for="Dada">Data Limite:</label><br>
-				<input type="date" id="Data" required/><br>
+				<input type="date" id="Data"  required/><br>
 				<br>
 
 				<label for="foto">Foto:</label><br>
-				<input name="imagem" type="file" ><br>
+				<input name="imagem" type="file" accept="image/*" ><br>
+				<br>
 
 				<label for="status">Status:</label><br>
 				<select>
-					<option value="40">40</option>
-					<option value="80">80</option>
+					<option  value="40">40 Horas</option>
+					<option  value="80">80 Horas</option>
 				  </select>
 	
-
-
-
+				<br><br>
+				
+				<a href="#" class="myButton">enviar</a>
+				
 
 
 
